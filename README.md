@@ -17,8 +17,8 @@ instaling expo
 
 start dev
 `npx expo start --tunnel` --tunnel flag for ditching firewalls
-for tunneling :
 
+for tunneling :
 `npm install --global @expo/ngrok@^4.1.0`
 
 # if bundler failed while tunneling refer to this stack overflow thread
