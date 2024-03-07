@@ -12,7 +12,7 @@ import { icons, SIZES } from "../../../constants";
 import styles from "./welcome.style";
 
 const Welcome = () => {
-const router = useRouter();
+  const router = useRouter();
   return (
     <View>
       <View style={styles.container}>
@@ -24,8 +24,19 @@ const router = useRouter();
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
-          style={styles.searchInput}
+            style={styles.searchInput}
+            value=""
+            onChange={() => {}}
+            placeholder="Search for jobs"
           />
+
+          <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+            <Image
+              source={icons.search}
+              resizeMode="contain"
+              style={styles.searchBtnImage}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
